@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+:root {
+  --ScissorsGradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
+  --PaperGradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
+  --RockGradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+  --LizardGradient: hsl(261, 73%, 60%) to ;
+  --Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+  --DarkText: hsl(229, 25%, 31%);
+  --ScoreText: hsl(229, 64%, 46%);
+  --HeaderOutline: hsl(217, 16%, 45%);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}

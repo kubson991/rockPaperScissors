@@ -1,0 +1,47 @@
+@mixin element($color1,$color2,$route){
+    background-image: linear-gradient($color1, $color2);
+    border-color:$color1;
+
+    div {
+      background-image: url($route);
+    }
+}
+
+.ElementContainer {
+  .element {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    padding: 1.2rem;
+    box-shadow: inset 0px -5px 10px -8px #000000;
+    border-bottom: 3px solid hsl(261, 73%, 60%);
+    margin: auto;
+    cursor:pointer ;
+
+    div {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+      box-shadow: inset -14px 16px 39px -38px #000000;
+    }
+  }
+  .lizard {
+    @include element(hsl(261, 73%, 60%),hsl(261, 72%, 63%) ,'../../../public/assets/icon-lizard.svg');
+  }
+  .paper {
+    @include element(hsl(230, 89%, 62%) ,hsl(230, 89%, 65%) ,'../../../public/assets/icon-paper.svg');
+  }
+  .rock {
+    @include element(hsl(349, 71%, 52%),hsl(349, 70%, 56%),'../../../public/assets/icon-rock.svg');
+  }
+  .scissors {
+    @include element(hsl(39, 89%, 49%),hsl(40, 84%, 53%),'../../../public/assets/icon-scissors.svg');
+  }
+  .spock {
+    @include element(hsl(189, 59%, 53%),hsl(189, 58%, 57%),'../../../public/assets/icon-spock.svg');
+  }
+}

@@ -1,0 +1,42 @@
+.Selector{
+    width: 27rem;
+    height:26rem;
+    background-image: url(../../../public/assets/bg-pentagon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .element{
+        width: fit-content;
+        text-align: center;
+        margin: unset;
+    }
+    .element0{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .element1{
+        position: absolute;
+        left: -4.5rem;
+        top: 6.5rem;
+    }
+    .element2{
+        position: absolute;
+        right: -4.5rem;
+        top: 6.5rem;
+    }
+    .element3{
+        position: absolute;
+        right:0;
+        top: 20.5rem;
+    }
+    .element4{
+        position: absolute;
+        left:0;
+        top: 20.5rem;
+    }
+}

@@ -1,0 +1,117 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    circle,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  .RulesButton {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: white;
+    border: 2px solid var(--HeaderOutline);
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 32%;
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    max-width: 20rem;
+  }
+  .RulesButton:hover {
+    color: hsl(214, 47%, 23%);
+    background-color: var(--HeaderOutline);
+  }
+  .again {
+    width: 18rem;
+  }
+  .rules {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.254);
+    div {
+      background-color: white;
+      background-image: url(../public/assets/image-rules-bonus.svg);
+      background-repeat: no-repeat;
+      background-size: 95%;
+      background-position: center;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      h1 {
+        position: relative;
+        margin: auto;
+        top: 10rem;
+        text-align: center;
+        font-size: 3rem;
+        color: var(--DarkText);
+      }
+      .out {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 5rem;
+        background-image: url(../public/assets/icon-close.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .winnerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      color: white;
+      font-size: 5rem;
+      text-align: center;
+      position: relative;
+      bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .App {
+    .rules {
+      div {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 30%;
+        height: 50%;
+        background-size: 70%;
+        border-radius: 5%;
+        h1{
+          position: absolute;
+          top: 3rem;
+          left: 5rem;
+        }
+        .out{
+          position: absolute;
+          bottom: unset;
+          left: unset;
+          top: 3rem;
+          right: 4rem;
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+}

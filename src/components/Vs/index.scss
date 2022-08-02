@@ -1,0 +1,19 @@
+.VsComponent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 26rem;
+    h2{
+        color: white;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .holder{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+}
